@@ -122,13 +122,20 @@ a {
 
   }
 
-  .hero-text {
 
+
+  .hero-text {
+    max-width: 90%;
     padding: 0.5rem;
     width:60%;
     margin-left: 10rem;
     top: 2rem;
 
+  }
+
+  .hero-title{
+    font-size: 14vw;
+    max-width: 90%;
   }
     .h3{
         margin-top:-4rem;
@@ -188,12 +195,18 @@ section.project-list{
 }
 
 section.project-card{
-    position:flex;
-    justify-content:flex-start;
+
+    display:flex;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    max-width: 100%; 
+    height: auto;
     background-color: #98B5F5;
-    padding:14rem;
+    padding:4rem;
     margin-top:-8rem;
-    margin-bottom:20rem;  
+    margin-bottom:2rem;  
     border-radius:2rem;
     box-shadow:-0.25rem 0.25rem 0.5rem rgba(150, 150, 150, 0.25);
 } 
@@ -205,11 +218,34 @@ section.project-card{
 
 }
 
-.project-caption{
-    margin-top:-10rem;
-    position:flex;
+
+
+.project-card img{
+    max-width: 100%; 
+    height: auto;
+    position: relative;
+    margin-left: -120px;
 
 }
+
+.project-card:hover{
+    display:flex;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    max-width: 100%; 
+    height: auto;
+    background-color: #323BDF;
+    opacity: 0.75;
+    padding:4rem;
+    margin-top:-8rem;
+    margin-bottom:2rem;  
+    border-radius:2rem;
+    box-shadow:-0.25rem 0.25rem 0.5rem rgba(150, 150, 150, 0.25);
+
+}
+
 /* ------ Case Study Styling ------ */
 
 .case-study-header{
@@ -258,16 +294,123 @@ section.ohme-site{
 
 /* ------ About Styling ------ */
 
+.image-placeholder {
+    width: 300px;
+    height: 400px;
+    background-color: #99afff;
+    border-radius: 30px;
+}
 
-.about-heading{
-    font-size:30px;
-    max-width: 50rem;
+.About-intro{
     display:flex;
-    flex-direction:row;
     justify-content:center;
     align-items: center;
+    height: 50vh;
+    text-align: center; /* Ensures text is centered */
+    flex-direction: column;
+}
+
+.about-heading{
+    font-size: 30px;
+    max-width: 50rem;
+    text-align: center;
 
 }
+
+.about-title{
+     font-size: 3vw;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Layout */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top:6rem;
+}
+
+/* Left Side (Image Placeholder) */
+.image-placeholder {
+    width: 400px;
+    height: 650px;
+    background-color: #99afff;
+    border-radius: 30px;
+}
+
+/* Right Side (Text Content) */
+.about-content {
+    max-width: 380px;
+}
+
+/* Name Styling */
+.name {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.name span {
+    font-style: italic;
+}
+
+/* Title */
+.title {
+    font-size: 1rem;
+    color: #3b3486;
+    margin-bottom: 20px;
+}
+
+/* Bio */
+.bio {
+    font-size: 1.25rem;
+    color:#171B6E;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+/* Email */
+.email {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+
+.btn {
+    background-color: #18144d;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    padding:.75rem;
+    border-radius:1rem;
+    font-size: 1rem;
+    
+
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #323BDF;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    padding:.75rem;
+    border-radius:1rem;
+    font-size: 1rem;
+    
+
+    display: inline-block;
+}
+
 
 
 
@@ -281,6 +424,7 @@ footer {
     display:flex;
     flex-direction:row;
     flex-direction:column;
+    flex-wrap: wrap;
 
     justify-content: space-between;
     z-index:20;
@@ -344,4 +488,6 @@ footer p{
     
     font-weight:lighter;
 }
+
+
 

@@ -310,6 +310,8 @@ section.ohme-site{
     flex-direction: column;
 }
 
+
+
 .about-heading{
     font-size: 30px;
     max-width: 50rem;
@@ -324,17 +326,21 @@ section.ohme-site{
 
 }
 
-
-/* Layout */
 .about-section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 60px;
     max-width: 1000px;
     margin: auto;
     margin-top:6rem;
 }
+
+
+
+
+/*  */
 
 /* Left Side (Image Placeholder) */
 .image-placeholder {
@@ -491,3 +497,17 @@ footer p{
 
 
 
+/* Media Querie */
+
+@media (min-width: 998px){
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top:6rem;
+}
+}
